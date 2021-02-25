@@ -6,7 +6,9 @@ source 'https://github.com/Artsy/Specs.git'
 platform :ios, '13.0'
 # 忽略引入库的所有警告（强迫症者的福音啊）
 inhibit_all_warnings!
-target 'NetWork' do 
+target 'NetWork' do
+  pod 'RxSwift','=5.0.0';
+  pod 'Alamofire','>=4.8.2';
     target 'NetWorkTests' do
        inherit! :search_paths 
     end
